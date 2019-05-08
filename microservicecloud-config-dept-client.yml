@@ -42,4 +42,4 @@ info:
   app.name: microservicecloud-config-dept-client
   company.name: www.jiahe.com
   build.artifactId: ${project.artifactId}
-build.version: ${project.version}
+  build.version: ${project.version}
