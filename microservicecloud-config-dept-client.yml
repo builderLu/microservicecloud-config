@@ -9,7 +9,6 @@ server:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.wangfang.springcloud.entites
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 spring:
@@ -39,7 +38,7 @@ eureka:
 
 
 info:
-  app.name: wangfang-microservicecloud-springcloudconfig01
-  company.name: www.wangfang.com
+  app.name: microservicecloud-config-dept-client
+  company.name: www.jiahe.com
   build.artifactId: ${project.artifactId}
 build.version: ${project.version}
