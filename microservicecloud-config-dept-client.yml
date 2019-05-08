@@ -43,7 +43,7 @@ spring:
       initial-size: 5          # 初始化连接数
       max-total: 5             # 最大连接数
       max-wait-millis: 200    # 等待连接最大超时时间
-validation-query: SELECT 1 
+      validation-query: SELECT 1 
 
 eureka:
   client:                      # 客户端注册eureka服务列表
