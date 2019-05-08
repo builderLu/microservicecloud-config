@@ -28,6 +28,23 @@ spring:
       max-total: 5             # 最大连接数
       max-wait-millis: 200    # 等待连接最大超时时间
       validation-query: SELECT 1 
+eureka:
+  client:                      # 客户端注册eureka服务列表
+    service-url:
+      #单机版注册地址 http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka
+  instance:
+    instance-id: dept-8001.com
+    prefer-ip-address: true  #访问地址显示ip 
+---
+server:
+  port: 8001
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml 
+  type-aliases-package: com.atguigu.springcloud.entities 
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml 
 spring:
   profiles: test
   application:
